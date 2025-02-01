@@ -38,7 +38,7 @@ jobs:
         run: mvn test   # Run the actual tests
 
       - name: Upload test results (Optional)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: target/test-classes/testng-results.xml   # Assuming you use TestNG
